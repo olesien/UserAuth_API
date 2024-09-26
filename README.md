@@ -1,5 +1,5 @@
 db.properties
 
-db.url=jdbc:
-db.username=
+\ndb.url=jdbc:\n
+db.username=\n
 db.password=
