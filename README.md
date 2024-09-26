@@ -1,3 +1,4 @@
+
 ### db.properties
 
 ```
@@ -6,7 +7,7 @@ db.username=postgres
 db.password=postgres
 ```
 
-Db:
+### Db (postgres):
 ```sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
