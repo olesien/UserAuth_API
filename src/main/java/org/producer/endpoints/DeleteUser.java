@@ -1,13 +1,9 @@
 package org.producer.endpoints;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import org.producer.DB;
-import org.producer.User;
 import org.producer.UserRepo;
-
 import java.io.IOException;
 import java.io.OutputStream;
 import java.sql.SQLException;

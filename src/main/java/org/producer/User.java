@@ -6,7 +6,7 @@ public class User {
 
     private String email;
 
-    private int age;
+    private Integer age;
 
     private String gender;
 
@@ -16,7 +16,7 @@ public class User {
 
     private boolean dataConsent;
 
-    User(int id, String name, String email, int age, String gender, String password, boolean cookieConsent, boolean dataConsent) {
+    User(int id, String name, String email, Integer age, String gender, String password, boolean cookieConsent, boolean dataConsent) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -59,11 +59,11 @@ public class User {
         this.email = email;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 

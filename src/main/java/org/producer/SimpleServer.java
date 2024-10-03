@@ -2,11 +2,8 @@ package org.producer;
 
 import com.sun.net.httpserver.HttpServer;
 import org.producer.endpoints.*;
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.security.NoSuchAlgorithmException;
-import java.sql.SQLException;
 
 public class SimpleServer {
     static void start() throws IOException {

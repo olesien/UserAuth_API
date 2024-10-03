@@ -51,6 +51,7 @@ public class AddUser implements HttpHandler {
                 UserRepo userRepo = new UserRepo(con);
                 System.out.println("Add user");
                 User newUser = userRepo.createUser(user.getName(), user.getEmail(), user.getAge(), user.getGender(), user.getPassword(), false, false);
+                System.out.println("Added user");
                 GsonBuilder builder = new GsonBuilder();
                 Gson gson = builder.create();
                 String response = gson.toJson(newUser);

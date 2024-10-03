@@ -13,13 +13,22 @@ public class UserRepo {
     public UserRepo(Connection con) {
         this.con = con;
     }
-    public User createUser(String name, String email, int age,  String gender, String password, boolean cookieConsent, boolean dataConsent) throws SQLException {
+    public User createUser(String name, String email, Integer age,  String gender, String password, boolean cookieConsent, boolean dataConsent) throws SQLException {
         String query = "INSERT INTO users (name, email, age, gender, password, cookie_consent, data_consent) VALUES (?, ?, ?, ?, ?, ?, ?)";
         PreparedStatement stmt = con.prepareStatement(query);
         stmt.setString(1, name);
         stmt.setString(2, email);
-        stmt.setInt(3, age);
-        stmt.setString(4, gender);
+        if (age == null) {
+            stmt.setNull(3, java.sql.Types.NULL);
+        } else {
+            stmt.setInt(3, age);
+        }
+        if (gender == null) {
+            stmt.setNull(4, java.sql.Types.NULL);
+        } else {
+            stmt.setString(4, gender);
+        }
+
         stmt.setString(5, password);
         stmt.setBoolean(6, cookieConsent);
         stmt.setBoolean(7, dataConsent);
