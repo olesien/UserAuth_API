@@ -2,7 +2,7 @@
 ### db.properties
 
 ```
-db.url=jdbc:postgresql://localhost:5432/news_website
+db.url=jdbc:postgresql://localhost:5432/delivery
 db.username=postgres
 db.password=postgres
 ```
